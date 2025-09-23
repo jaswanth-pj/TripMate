@@ -1,0 +1,146 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #1a73e8;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Search Section */
+.search-section {
+  margin: 20px 0;
+}
+
+.search-section input {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-section button:hover {
+  background-color: #155ab6;
+}
+
+/* Photos Section */
+.photos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.photos-grid img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.photos-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Weather Section */
+.weather-card {
+  background: white;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 90%;
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ================= Responsive Design ================= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .search-section input {
+    width: 70%;
+  }
+
+  .photos-grid img {
+    width: 150px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-section input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .search-section button {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .photos-grid img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .weather-card {
+    width: 95%;
+    padding: 15px;
+  }
+}
