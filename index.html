@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TripMate: Explore Cities with Photos & Live Weather</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>🌍 TripMate</h1>
-    <p>Discover destinations, view photos, and check weather!</p>
+    <p>Discover destinations, view photos, check weather & learn about cities!</p>
   </header>
 
   <main>
     <section class="search-section">
-      <input type="text" id="destination" placeholder="Enter a city...">
-      <button onclick="searchDestination()">Explore</button>
+      <input type="text" id="destination" placeholder="Enter a city..." />
+      <button type="button" onclick="searchDestination()">Explore</button>
     </section>
 
     <section class="results-section">
       <div id="photos" class="photos-grid"></div>
       <div id="weather" class="weather-card"></div>
     </section>
+
+    <section class="city-info-section">
+      <div id="city-details" class="city-details-card">
+        <p>City details will appear here.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Done by pallikonda pechala jaswanth</p>
-    <p>Travel Explorer-TravelMate &copy; 2025 | Powered by Unsplash & OpenWeatherMap</p>
+    <p>Done by Pallikonda Pechala Jaswanth</p>
+    <p>Travel Explorer - TripMate &copy; 2025 | Powered by Unsplash, OpenWeatherMap & Wikipedia</p>
   </footer>
 
   <script src="script.js"></script>
